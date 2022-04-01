@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Browser1">
+        <parameter name="iLABURL" value="https://www.ilabquality.com/">
+        </parameter>
+
+        <parameter name="Browser" value="chrome">
+        </parameter>
+
+        <classes><class name="iLAB.webtest.ilabTest">
+            <methods><include name="applicationTest"/>
+
+        </methods></class></classes></test>
+
+
+    <test verbose="2" preserve-order="true" name="Browser2">
+        <parameter name="iLABURL" value="https://www.ilabquality.com/">
+        </parameter>
+
+        <parameter name="Browser" value="Microsoft edge">
+        </parameter>
+
+        <classes><class name="iLAB.webtest.ilabTest">
+            <methods><include name="applicationTest"/>
+
+            </methods></class></classes></test>
+
+
+
+
+    <test verbose="2" preserve-order="true" name="Browse3">
+        <parameter name="iLABURL" value="https://www.ilabquality.com/">
+        </parameter>
+
+        <parameter name="Browser" value="FireFox">
+        </parameter>
+
+        <classes><class name="iLAB.webtest.ilabTest">
+            <methods><include name="applicationTest"/>
+
+            </methods></class></classes></test>
+</suite>
